@@ -4,8 +4,8 @@ import type {LinksFunction} from "@remix-run/node";
 
 import "./tailwind.css";
 import {Box, VStack} from "@navikt/ds-react";
-import Header from "~/components/Header";
-import BodyContainer from "~/components/BodyContainer";
+import Header from "~/components/root/Header";
+import BodyContainer from "~/components/root/BodyContainer";
 
 export const links: LinksFunction = () => [
   {rel: "preconnect", href: "https://fonts.googleapis.com"},
