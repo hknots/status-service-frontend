@@ -5,6 +5,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import "@navikt/ds-css";
 import type { LinksFunction } from "@remix-run/node";
 
 import "./tailwind.css";
