@@ -1,10 +1,11 @@
-import {Links, Meta, Scripts, ScrollRestoration,} from "@remix-run/react";
+import {Links, Meta, Outlet, Scripts, ScrollRestoration,} from "@remix-run/react";
 import "@navikt/ds-css";
 import type {LinksFunction} from "@remix-run/node";
 
 import "./tailwind.css";
-import {VStack} from "@navikt/ds-react";
+import {Box, VStack} from "@navikt/ds-react";
 import Header from "~/components/Header";
+import BodyContainer from "~/components/BodyContainer";
 
 export const links: LinksFunction = () => [
   {rel: "preconnect", href: "https://fonts.googleapis.com"},
@@ -39,8 +40,13 @@ export function Layout({children}: { children: React.ReactNode }) {
 
 export default function App() {
   return (
-    <VStack>
+    <Box
+      className="flex flex-col min-h-screen"
+    >
       <Header/>
-    </VStack>
+      <BodyContainer>
+        <Outlet/>
+      </BodyContainer>
+    </Box>
   );
 }
