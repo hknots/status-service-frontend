@@ -11,6 +11,8 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@navikt/ds-css": "^7.17.4",
+    "@navikt/ds-react": "^7.17.4",
     "@remix-run/node": "^2.16.2",
     "@remix-run/react": "^2.16.2",
     "@remix-run/serve": "^2.16.2",
