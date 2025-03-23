@@ -12,6 +12,7 @@ export default function Title({title, icon: Icon}: TitleProps) {
       borderColor="border-strong"
       className="w-full"
       paddingBlock="12 2"
+      margin="0 0 3 0"
     >
       <HStack gap="2">
         <VStack justify="center">
