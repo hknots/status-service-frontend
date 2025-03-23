@@ -1,16 +1,13 @@
-import Title from "~/components/Title";
-import {VStack} from "@navikt/ds-react";
 import {GlassesIcon} from "@navikt/aksel-icons";
+import Page from "~/components/page/Page";
 
 export default function Index() {
   return (
-    <VStack
-      className="w-full h-full"
+    <Page
+      title="Miljø Oversikt - Api"
+      icon={GlassesIcon}
     >
-      <Title
-        title="Miljø Oversikt - Api"
-        icon={GlassesIcon}
-      />
-    </VStack>
+      test
+    </Page>
   );
 }
